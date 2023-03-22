@@ -10,16 +10,6 @@ import { useEffect, useState } from 'react';
 import { NewsContext } from './context';
 
 export function App() {
-  const [news, setNews] = useState(null);
-
-  useEffect(() => {
-    fetch('http://localhost:3001/api/news')
-      .then(response => response.json())
-      .then(news => {
-        setNews(news);
-      });
-  }, []);
-
   return (
     <>
       {/*<NxWelcome title="web" />*/}
