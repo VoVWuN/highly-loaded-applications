@@ -45,8 +45,6 @@ export class NewsService {
   async getAll(userId): Promise<News[]> {
     let value = await this.cacheManager.get<News[]>('news');
 
-    console.log(value);
-
     if (value) {
       return value;
     }
@@ -58,9 +56,7 @@ export class NewsService {
         },
       });
 
-      await this.cacheManager.set('news', news, {
-        ttl: 1000,
-      });
+      await this.cacheManager.set('news', news);
 
       return news;
     } else {
@@ -75,9 +71,7 @@ export class NewsService {
         },
       });
 
-      await this.cacheManager.set('news', news, {
-        ttl: 300,
-      });
+      await this.cacheManager.set('news', news);
       return news;
     }
   }
