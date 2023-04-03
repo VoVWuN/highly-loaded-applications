@@ -1,0 +1,16 @@
+ Starting Nest application... NestFactory
+ n dependencies initialized InstanceLoader
+ l dependencies initialized InstanceLoader
+ ServeStaticModule dependencies initialized InstanceLoader
+ ENV { production: true }
+ i {/api}: RoutesResolver
+ Mapped {/api, GET} route RouterExplorer
+ i {/api/news}: RoutesResolver
+ Mapped {/api/news, GET} route RouterExplorer
+ Mapped {/api/news, POST} route RouterExplorer
+ Nest application successfully started NestApplication
+ Новость успешно создана { title: 'test', description: 'test description' }
+ Новость успешно создана { title: 'test', description: 'test description' }
+ Новость успешно создана { title: 'test', description: 'test description' }
+ Новость успешно создана { title: 'test', description: 'test description' }
+ Новость успешно создана { title: 'test', description: 'test description' }
