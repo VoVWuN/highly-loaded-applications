@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "module": "CommonJS",
+      "moduleResolution": "Node",
+      "allowJs": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "rootDirs": [
+        "./src",
+      ],
+      "esModuleInterop": true,
+      "experimentalDecorators": true,
+      "strictNullChecks": true,
+      "noImplicitThis": true,
+      "noImplicitReturns": true,
+      "strictFunctionTypes": true,
+      "strictPropertyInitialization": true,
+  
+      "outDir": "./public/js",
+      "sourceMap": true,
+      "typeRoots": [
+        "node_modules/@types"
+      ],
+      "target": "ES2017",
+    },
+  }

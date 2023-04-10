@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="./css/output.css" rel="stylesheet">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body class="p-5">
+<div class="header flex justify-between">
+<h1 class="text-2xl">Messenger</h1>
+  <button id="login">Login</button>
+<div id="notifications">
+  <h3>List of notifications</h3>
+</div>
+</div>
+<div class="grid" id="block" style="grid-template-columns: 1fr 3fr">
+  <div class="grid" style="grid-auto-rows: 1fr 1fr">
+  <div class="border border-black p-2" id="groups">
+    <h3>List of groups</h3>
+    <ul id="groupslist"></ul>
+  </div>
+  <div class="border border-black p-2" id="users">
+    <h3>List of online users</h3>
+    <ul id="userlist"></ul>
+  </div>
+  </div>
+  <div class="flex flex-col min-h-[calc(100vh-100px)] border border-black">
+    <div class="flex-grow p-2">
+      <h3>List of messages</h3>
+      <div class="flex flex-col w-auto" id="messages"></div>
+    </div>
+    <form class="flex border border-black p-2" id="send-form">
+      <input autofocus class="border border-black w-full mr-2" id="input" type="text" />
+      <button id="send" type="submit">Send</button>
+    </form>
+  </div>
+</div>
+</body>
+<script crossorigin="anonymous" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" src="https://cdn.socket.io/4.6.0/socket.io.min.js"></script>
+<script src="./js/main.js"></script>
+</html>

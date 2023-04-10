@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="./css/output.css" rel="stylesheet">
+</head>
+<body class="p-5">
+<div class="header flex justify-between">
+<h1 class="text-2xl">Messenger</h1>
+<div id="notifications">
+  <h3>List of notifications</h3>
+</div>
+</div>
+<div class="grid" id="block" style="grid-template-columns: 1fr 3fr">
+  <div class="grid" style="grid-auto-rows: auto auto">
+  <div class="border border-black p-2" id="groups">
+    <h3>List of groups</h3>
+    <ul class="flex flex-col gap-1" id="groupslist"></ul>
+  </div>
+<!--  <div class="border border-black p-2" id="users">-->
+<!--    <h3>List of online users</h3>-->
+<!--    <ul id="userlist"></ul>-->
+<!--  </div>-->
+  </div>
+  <div class="flex flex-col border border-black">
+    <div class="flex-grow p-2">
+      <h3 id="title">List of messages: </h3>
+      <div class="h-[300px] overflow-y-scroll" id="messages"></div>
+    </div>
+    <form class="flex border border-black p-2" id="send-form">
+      <input autofocus class="border border-black w-full mr-2" id="input" type="text" />
+      <button id="send" type="submit">Send</button>
+    </form>
+  </div>
+</div>
+</body>
+
+<script crossorigin="anonymous" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" src="https://cdn.socket.io/4.6.0/socket.io.min.js"></script>
+<script src="./js/main.js"></script>
+</html>
